@@ -1,6 +1,6 @@
 'use client'
 import React from 'react';
-import { useDarkTheme } from '../(contexts)/dark-theme-context';
+import { useDarkTheme } from '../contexts/dark-theme-context';
 
 export function NavBar() {
     const { isDarkTheme, toggleTheme } = useDarkTheme();

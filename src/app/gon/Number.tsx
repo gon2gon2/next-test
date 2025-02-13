@@ -1,6 +1,6 @@
 "use client"
 
-import { useDarkTheme } from "../(contexts)/dark-theme-context";
+import { useDarkTheme } from "../../shared/contexts/dark-theme-context";
 
 export function Number({ number }: { number: number }) {
     const { isDarkTheme } = useDarkTheme();

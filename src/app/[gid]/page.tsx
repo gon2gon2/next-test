@@ -2,11 +2,10 @@ import {connection} from "next/server";
 
 export default async function Page({params}: { params: Promise<{ gid: string }> }) {
   await connection();
-  const slug = (await params).gid
-  console.log(slug)
+  const gid = (await params).gid
   return (
       <h1>
-        {decodeURI(slug)}
+        {decodeURI(gid)}
       </h1>
   );
 }
