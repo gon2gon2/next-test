@@ -1,6 +1,6 @@
 "use client"
 
-import { useDarkTheme } from "../../shared/contexts/dark-theme-context";
+import { useZustandDarkTheme as useDarkTheme } from "../../shared/store/zustand-theme-store";
 
 export function Number({ number }: { number: number }) {
     const { isDarkTheme } = useDarkTheme();
